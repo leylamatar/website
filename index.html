@@ -171,11 +171,13 @@
         <div class="right">
             
             <h2>İletişim</h2>
-            <input type="text" class="field" placeholder="İsim">
-            <input type="text" class="field" placeholder="Email">
-            <input type="text" class="field" placeholder="Telefon Numarası">
-            <textarea placeholder="Mesajinizi bırakın..." class="field"></textarea>
-            <button class="btn">Gönder</button>
+            <form  method="post" name="form" class="form-box">
+            <input type="text" name="name" class="field" placeholder="İsim" required>
+            <input type="text" name="email" class="field" placeholder="Email" required>
+            <input type="text" name="phone" class="field" placeholder="Telefon Numarası" required>
+            <textarea  name="msg" placeholder="Mesajinizi bırakın..." class="field"></textarea>
+            <button name="submit" class="btn">Gönder</button>
+        </form>
         </div>
     </div>
 </div>
